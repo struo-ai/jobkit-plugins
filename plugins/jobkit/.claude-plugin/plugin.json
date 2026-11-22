@@ -1,0 +1,13 @@
+{
+  "name": "jobkit",
+  "version": "0.1.0",
+  "description": "Find Jobkit jobs and customers, create work and plan visits in your authorized company.",
+  "author": { "name": "Jobkit", "url": "https://jobkit.cz" },
+  "homepage": "https://jobkit.cz",
+  "repository": "https://github.com/struo-ai/jobkit-plugins",
+  "license": "MIT",
+  "keywords": ["jobkit", "jobs", "customers", "scheduling"],
+  "icon": "./assets/icon.png",
+  "supportUrl": "https://jobkit.cz/kontakt",
+  "privacyPolicyUrl": "https://jobkit.cz/soukromi"
+}

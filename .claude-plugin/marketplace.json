@@ -1,0 +1,12 @@
+{
+  "name": "jobkit",
+  "description": "Jobkit plugins for Claude.",
+  "owner": { "name": "Jobkit", "url": "https://jobkit.cz" },
+  "plugins": [
+    {
+      "name": "jobkit",
+      "source": "./plugins/jobkit",
+      "description": "Find Jobkit jobs and customers, create work and plan visits in your authorized company."
+    }
+  ]
+}

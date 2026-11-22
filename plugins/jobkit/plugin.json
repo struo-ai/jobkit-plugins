@@ -1,0 +1,25 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "jobkit",
+  "version": "0.1.0",
+  "description": "Find Jobkit jobs and customers, create work and plan visits in your authorized company.",
+  "author": { "name": "Jobkit", "url": "https://jobkit.cz" },
+  "homepage": "https://jobkit.cz",
+  "repository": "https://github.com/struo-ai/jobkit-plugins",
+  "license": "MIT",
+  "keywords": ["jobkit", "jobs", "customers", "scheduling"],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Jobkit",
+        "shortDescription": "Find jobs and customers, create work and plan visits.",
+        "developerName": "Jobkit",
+        "category": "Productivity",
+        "websiteURL": "https://jobkit.cz",
+        "privacyPolicyURL": "https://jobkit.cz/soukromi",
+        "composerIcon": "./assets/icon.png",
+        "logo": "./assets/icon.png"
+      }
+    }
+  }
+}

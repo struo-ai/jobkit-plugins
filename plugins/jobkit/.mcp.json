@@ -1,0 +1,5 @@
+{
+  "mcpServers": {
+    "jobkit": { "type": "http", "url": "https://app.jobkit.cz/mcp" }
+  }
+}
