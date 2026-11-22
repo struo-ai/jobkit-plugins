@@ -3,8 +3,7 @@
 Connect Claude, ChatGPT and Codex to [Jobkit](https://jobkit.cz): find jobs and
 customers, create work and plan visits in the company you sign in to.
 
-The plugin adds the Jobkit connection and a short workflow guide for the
-assistant. It contains no credentials and runs nothing on your machine. Every
+The plugin adds the Jobkit connection and tells the assistant when to use it. It contains no credentials and runs nothing on your machine. Every
 call is authorized by Jobkit against your membership, permissions and the tools
 your company has enabled.
 
@@ -37,13 +36,14 @@ Install Jobkit from that source in the plugin list, then sign in.
 
 ### Without a plugin
 
-Any client that supports remote MCP servers can connect directly. This gives the
-assistant the tools without the workflow guide.
+Any client that supports remote MCP servers can connect directly:
 
 | Client | Server URL |
 | --- | --- |
-| Claude: **Customize → Connectors → Add custom connector** | `https://app.jobkit.cz/mcp` |
-| ChatGPT: **Plugins → + → Add custom MCP server** | `https://app.jobkit.cz/mcp/chatgpt` |
+| Claude: **Customize → Connectors → Add custom connector** | `https://mcp.jobkit.cz/mcp` |
+| ChatGPT: **Plugins → + → Add custom MCP server** | `https://mcp.jobkit.cz/mcp/chatgpt` |
+
+ChatGPT has its own address because it discovers tools before sign-in.
 
 Remove a direct connection before enabling the plugin, or the same tools appear twice.
 
@@ -68,7 +68,9 @@ well. Never paste tokens into a conversation or a support message.
 
 One directory, `plugins/jobkit`, serves both ecosystems: Claude reads
 `.claude-plugin/plugin.json` and `.mcp.json`, OpenAI clients read `plugin.json`
-and `mcp.json`, and both load `skills/`. The two marketplace catalogs at the
+and `mcp.json`, and both load `skills/`. How to read, write and schedule is
+owned by the Jobkit server, which sends it as MCP instructions; the skill only
+says when to use Jobkit. The two marketplace catalogs at the
 repository root point at it.
 
 To release, bump `version` in both manifests, merge, then push a
