@@ -36,11 +36,14 @@ Install Jobkit from that source in the plugin list, then sign in.
 
 ### Without a plugin
 
-Any client that supports remote MCP servers can connect directly to
-`https://mcp.jobkit.cz/mcp`:
+Any client that supports remote MCP servers can connect directly:
 
-- Claude: **Customize → Connectors → Add custom connector**
-- ChatGPT: **Plugins → + → Add custom MCP server**
+| Client | Server URL |
+| --- | --- |
+| Claude: **Customize → Connectors → Add custom connector** | `https://mcp.jobkit.cz/mcp` |
+| ChatGPT: **Plugins → + → Add custom MCP server** | `https://mcp.jobkit.cz/mcp/chatgpt` |
+
+ChatGPT has its own address because it discovers tools before sign-in.
 
 Remove a direct connection before enabling the plugin, or the same tools appear twice.
 
