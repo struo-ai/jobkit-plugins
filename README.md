@@ -42,8 +42,8 @@ assistant the tools without the workflow guide.
 
 | Client | Server URL |
 | --- | --- |
-| Claude: **Customize → Connectors → Add custom connector** | `https://app.jobkit.cz/mcp` |
-| ChatGPT: **Plugins → + → Add custom MCP server** | `https://app.jobkit.cz/mcp/chatgpt` |
+| Claude: **Customize → Connectors → Add custom connector** | `https://mcp.jobkit.cz/mcp` |
+| ChatGPT: **Plugins → + → Add custom MCP server** | `https://mcp.jobkit.cz/mcp/chatgpt` |
 
 Remove a direct connection before enabling the plugin, or the same tools appear twice.
 
